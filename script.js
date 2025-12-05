@@ -7,7 +7,7 @@ function realizarTransformacion(estanqueElegido) {
     setTimeout(() => {
       if (estanqueElegido === "EstanqueDeLaMujerAhogada") {
         resolver("Ranma-chan (Transformación Lista)");
-         logoElement.src ="./images/chica.jpg";
+         logoElement.src ="./images/chica.jpg"; // Se cambia imagen de Ranma, ya se transformo 
       } else {
         rechazar(new Error("Transformación fallida: Ranma cayó en el Estanque del Cerdo."));
       }
@@ -20,7 +20,7 @@ function buscarAguaCaliente() {
   return new Promise((resolver) => {
     setTimeout(() => {
       resolver("Recurso 1: ¡Agua Caliente Encontrada!");
-      logoRecurso.src ="./images/agua-caliente.jpg";
+      logoRecurso.src ="./images/agua-caliente.jpg"; // Se consiguio el agua, se cambia la imagen del recurso
     }, 5000); // Tarda 5.0 segundo
   });
 }
@@ -30,7 +30,7 @@ function buscarSakeDeReversion() {
   return new Promise((resolver) => {
     setTimeout(() => {
       resolver("Recurso 2: ¡Sake de Reversión Listo!");
-      logoRecurso.src ="./images/sake-reversion.jpg";
+      logoRecurso.src ="./images/sake-reversion.jpg"; // Se consiguio otro recurso, cambia la imagen
     }, 2000); // Tarda 2 segundos
   });
 }
@@ -60,17 +60,17 @@ async function iniciarMisionRanmaOptimizada() {
     console.log(`Reporte (Recursos 2): ${resultadoSake}`);
     const reporteRecurso2 = document.getElementById("recurso2");
     reporteRecurso2.textContent=resultadoSake;
-    console.log("FIN: ¡Ranma tiene todos los recursos y vuelve a la normalidad!"); 
-    logoElement.src ="./images/chico.jpg";
+    console.log("FIN: ¡Ranma tiene todos los recursos y vuelve a la normalidad!"); // Ranma vuelve a ser hombre
+    logoElement.src ="./images/chico.jpg"; // Se cambia la imagen 
 
     
-    boton.innerText = 'Iniciar otra mision.';
+    boton.innerText = 'Iniciar otra mision.'; // Se cambia el estado del boton, ya termino la busqueda de recursos
     return "Misión Paralela Consolidada Exitosa";
     
 } catch (error) {
     console.error("\n¡La misión paralela falló inmediatamente debido a un recurso o transformación!");
     console.error(error.message);
-    //console.log("error!"); 
+    // Mensaje de error, algun recurso no se encontro
     throw error;
 }
 }
