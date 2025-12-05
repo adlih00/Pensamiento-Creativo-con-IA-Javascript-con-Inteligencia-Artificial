@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            background-image: url('https://images3.alphacoders.com/137/1378922.png')
+        }
+
+        h1 {
+            color: white;
+        }
+
+        span {
+            color: brown;
+            background-color: rgb(221, 188, 227);
+        }
+
+        button {
+            background-color: rgb(221, 188, 227);
+            color: rgb(83, 12, 94);
+            border-radius: 10px;
+            border: 2px solid rgb(83, 12, 94);
+            padding: 10px 20px;
+            margin-top: 10px;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>async/await</title>
+</head>
+
+<body>
+    <main class="title-container">
+
+        <section class="row align-items-center justify-content-center" id="main-content">
+            <!-- logo -->
+            <figure class="col-lg-5 col-9">
+                <img class="img-fluid rounded" src="./images/chico.jpg" id="logo" alt="Ranma Saotome" width="20%" />
+            </figure>
+
+        </section>
+
+        <h1>Pensamiento Creativo con IA | Javascript con Inteligencia Artificial</h1>
+
+        <section class="row align-items-center justify-content-center" id="main-content">
+            <!-- logo -->
+            <figure class="recurses">
+                <img class="img-fluid rounded" src="./images/sake-reversion.jpg" id="recursos" width="20%" />
+
+                <div id="result" class="result-box hidden">
+                    <p>Transformacion: <span id="transformacion">--</span> </p>
+                    <p>Reporte, recurso 1: <span id="recurso1">--</span> </p>
+                    <p>Reporte, recurso 2: <span id="recurso2">--</span> </p>
+    
+                </div>
+
+            </figure>
+
+        </section>
+        <button id="fetch-btn" class="btn-primary" onclick="handleFetchClick()">
+            Iniciar mision Ranma.
+        </button>
+
+
+    </main>
+</body>
+<script src="script.js"></script>
+
+</html>
